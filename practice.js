@@ -74,18 +74,20 @@ that is named color, with the value being the color of your backpack.
   //Code here
 
 const backPack = {
-
+  // firstPocket = 'chapstick',
 }
-
 const item = "firstPocket";
 
+backPack[item] = 'chapstick'; 
+
+backPack.color = "grey";
 
 
 
 //After you do the above, alert your entire backPack object.
 
   //Code here
-
+alert(backPack);
  
 
 /*
@@ -95,7 +97,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
   //Code here
-
+console.log({backPack});
 
 
 
@@ -117,6 +119,8 @@ var user2 = {
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
   //Code Here
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -139,8 +143,9 @@ var user2 = {
 //Create an empty object called methodCollection.
 
   //Code Here
-
-
+const methodCollection = {
+  // alertHello: function()
+}
 
 
 /*
@@ -150,7 +155,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
  */
 
   //Code Here
+methodCollection.alertHello = function() {
+  alert('hello');
+}
 
+methodCollection.logHello = function() {
+  console.log('hello');
+}
 
 
 
@@ -159,7 +170,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+// alertHello();
+// logHello();
 
 
 
@@ -174,6 +186,14 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // parameters and returns a new object with all of the information that you passed in.
 
   //Code Here
+
+function makePerson(name, birthday, ssn) {
+  return {
+    name,
+    birthday,
+    ssn
+  }
+}
 
 
 
@@ -190,4 +210,6 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+const makeCard = (cardNumber, expirationDate, securityCode) => {
+  return({makeCard});
+}
